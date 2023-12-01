@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quick & Easy Recipe Generator</title>
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -18,14 +24,14 @@
       <form id="recipe-generator-form">
         <input
           type="text"
-          placeholder="Enter food type for recipe..."
+          placeholder="Enter a food for recipe..."
           autofocus
           required
           autocomplete="off"
           class="instructions"
           id="user-instructions"
         />
-        <input type="submit" />
+        <input class="button" type="submit" />
       </form>
       <div id="recipe"></div>
     </main>
@@ -43,6 +49,6 @@
       >
       .
     </footer>
-    <script src="src/index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
