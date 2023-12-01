@@ -14,7 +14,7 @@ function generateRecipe(event) {
 
   let apiKey = "oaf35ec85ab9436b73053b0e51t48cf9";
   let prompt = `Generate a quick and easy recipe about ${instructionsInput.value}`;
-  let context = `You are a expert at cooking and love to provide easy, quick meals. Your mission is to provide quick and easy recipes in basic HTML. User information is ${instructionsInput.value}.`;
+  let context = `You are a expert at cooking and love to provide easy, quick meals. Your mission is to provide quick and easy recipes in basic HTML.`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   console.log("Generating poem");
