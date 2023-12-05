@@ -17,6 +17,10 @@ function generateRecipe(event) {
   let context = `You are a expert at cooking and love to provide easy, quick meals. Your mission is to provide quick and easy recipes in basic HTML.`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.classList.remove("hidden");
+  recipeElement.innerHTML = `<div class ="blink">⌛ Generating a easy recipe about ${instructionsInput.value}!</div>`;
+
   console.log("Generating poem");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
