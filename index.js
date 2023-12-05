@@ -21,10 +21,6 @@ function generateRecipe(event) {
   recipeElement.classList.remove("hidden");
   recipeElement.innerHTML = `<div class ="blink">⌛ Generating a easy recipe about ${instructionsInput.value}!</div>`;
 
-  console.log("Generating poem");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
-
   axios.get(apiUrl).then(displayRecipe);
 }
 
