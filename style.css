@@ -12,6 +12,8 @@ h1 {
   border-radius: 30px;
   background-color: #79c2d0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-right: 500px;
+  margin-left: 500px;
 }
 
 form {
@@ -46,6 +48,8 @@ input {
   background-color: #79c2d0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   list-style: none;
+  margin-right: 700px;
+  margin-left: 700px;
 }
 
 .hidden {
