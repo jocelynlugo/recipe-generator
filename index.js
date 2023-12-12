@@ -7,6 +7,11 @@ function displayRecipe(response) {
   });
 }
 
+function displayError(error) {
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.innerHTML = `Please try again!`;
+}
+
 function generateRecipe(event) {
   event.preventDefault();
 
@@ -21,7 +26,7 @@ function generateRecipe(event) {
   recipeElement.classList.remove("hidden");
   recipeElement.innerHTML = `<div class ="blink">⌛ Generating a easy recipe about ${instructionsInput.value}!</div>`;
 
-  axios.get(apiUrl).then(displayRecipe);
+  axios.get(apiUrl).then(displayRecipe).catch(displayError);
 }
 
 let recipeFormElement = document.querySelector("#recipe-generator-form");
