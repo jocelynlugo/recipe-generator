@@ -35,8 +35,7 @@ input {
   color: #bbe4e9;
   cursor: pointer;
 }
-.form-container,
-.recipe {
+.form-container {
   text-align: center;
   color: #bbe4e9;
   font-family: "Open Sans", sans-serif;
