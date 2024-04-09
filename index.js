@@ -24,6 +24,7 @@ function generateRecipe(event) {
 
   let recipeElement = document.querySelector("#recipe");
   recipeElement.classList.remove("hidden");
+  recipeElement = window.matchMedia("(max-width: 576px)");
   recipeElement.innerHTML = `<div class ="blink">⌛ Generating a easy recipe about ${instructionsInput.value}!</div>`;
 
   axios.get(apiUrl).then(displayRecipe).catch(displayError);

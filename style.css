@@ -75,6 +75,46 @@ footer {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  input {
+    display: block;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #53a8b6;
+  }
+
+  .form-container {
+    display: block;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    color: #bbe4e9;
+    font-family: "Open Sans", sans-serif;
+  }
+  .recipe {
+    display: block;
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+    color: #bbe4e9;
+    font-family: "Open Sans", sans-serif;
+    max-width: 100%;
+    background-color: #79c2d0;
+    list-style: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
 @keyframes blink {
   50% {
     opacity: 0;
